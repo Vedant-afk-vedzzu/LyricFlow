@@ -20,9 +20,13 @@ function App() {
         <Spectrum />
 
       </div>
+      <div className="Glass">
+        
+      </div>
 
-    </div>
+     </div>   
+    
+  
   );
 }
-
 export default App;
