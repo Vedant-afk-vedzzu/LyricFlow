@@ -1,0 +1,110 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #111;
+  color: white;
+  font-family: "Segoe UI", sans-serif;
+  overflow: hidden;
+}
+
+.app {
+  width: 100vw;
+  height: 100vh;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+}
+
+.vinyl {
+width: 200px;
+  height: 200px;
+
+  border-radius: 50%;
+
+  background:
+    radial-gradient(circle at center,
+    #222 0px,
+    #111 25px,
+    #444 26px,
+    #111 28px,
+    #333 45px,
+    #111 46px,
+    #2b2b2b 100%);
+
+  position: relative;
+
+  box-shadow:
+    0 0 40px rgba(255,255,255,.08);
+
+  animation: spin 6s linear infinite;
+}
+
+.vinyl-center{
+    width:60px;
+    height:60px;
+
+    border-radius:50%;
+
+    background:#dddddd;
+
+    position:absolute;
+
+    top:50%;
+    left:50%;
+
+    transform:translate(-50%,-50%);
+}
+
+@keyframes spin{
+
+from{
+
+transform:rotate(0deg);
+
+}
+
+to{
+
+transform:rotate(360deg);
+
+}
+
+}  
+
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.content h1 {
+  font-size: 58px;
+  font-weight:700;
+  letter-spacing: -2px;
+}
+
+.content h2 {
+  font-size: 24px;
+  font-weight: 300;
+  color: #8f8f8f;
+  margin-top: -10px;
+}
+
+.lyrics {
+  font-size: 34px;
+  font-weight: 500;
+  margin-top: 25px;
+  opacity: .9;
+}
+
+.spectrum {
+  font-size: 30px;
+  letter-spacing: 3px;
+  color: #00ff88;
+}
