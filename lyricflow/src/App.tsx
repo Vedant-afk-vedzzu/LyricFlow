@@ -1,3 +1,4 @@
+import { useState } from "react";
 import "./App.css";
 
 import Vinyl from "./components/Vinyl";
@@ -7,21 +8,22 @@ import Spectrum from "./components/Spectrum";
 import mockSong from "./data/mockSong";
 
 function App() {
+   const [song] = useState(mockSong);
   return (
     <div className="app">
-
+      
       <Vinyl 
-      albumArt={mockSong.albumArt}
-      isPlaying={mockSong.isPlaying} />
+      albumArt={song.albumArt}
+      isPlaying={song.isPlaying} />
       <div className="right">
 
-        <h1>{mockSong.title}</h1>
+        <h1>{song.title}</h1>
         
-        <h2>{mockSong.artist}</h2>
+        <h2>{song.artist}</h2>
 
         < SongInfo 
-          title={mockSong.title} 
-          artist={mockSong.artist}
+          title={song.title} 
+          artist={song.artist}
           />
 
         <Lyrics />
