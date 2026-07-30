@@ -4,23 +4,32 @@ import Vinyl from "./components/Vinyl";
 import SongInfo from "./components/SongInfo";
 import Lyrics from "./components/Lyrics";
 import Spectrum from "./components/Spectrum";
+import mockSong from "./data/mockSong";
 
 function App() {
   return (
     <div className="app">
 
-      <Vinyl />
-
+      <Vinyl 
+      albumArt={mockSong.albumArt}
+      isPlaying={mockSong.isPlaying} />
       <div className="right">
 
-        <SongInfo />
+        <h1>{mockSong.title}</h1>
+        
+        <h2>{mockSong.artist}</h2>
+
+        < SongInfo 
+          title={mockSong.title} 
+          artist={mockSong.artist}
+          />
 
         <Lyrics />
 
         <Spectrum />
 
       </div>
-      <div className="Glass">
+      <div className="glass">
         
       </div>
 

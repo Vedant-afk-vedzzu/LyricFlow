@@ -1,10 +1,13 @@
-function SongInfo() {
-  return (
-    <>
-      <h1>No Song Playing</h1>
-      <h2>Artist Name</h2>
-    </>
-  );
+interface SongInfoProps {
+  title: string;
+  artist: string;
 }
 
-export default SongInfo;
+export default function SongInfo({ title, artist }: SongInfoProps) {
+  return (
+    <div className="content">
+      <h1>{title}</h1>
+      <h2>{artist}</h2>
+    </div>
+  );
+}

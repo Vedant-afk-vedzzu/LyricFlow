@@ -1,9 +1,18 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500">
-  <circle cx="250" cy="250" r="240" fill="#111"/>
-  <circle cx="250" cy="250" r="210" fill="none" stroke="#222" stroke-width="2"/>
-  <circle cx="250" cy="250" r="190" fill="none" stroke="#2a2a2a" stroke-width="2"/>
-  <circle cx="250" cy="250" r="170" fill="none" stroke="#333" stroke-width="2"/>
-  <circle cx="250" cy="250" r="150" fill="none" stroke="#2a2a2a" stroke-width="2"/>
-  <circle cx="250" cy="250" r="70" fill="#dedede"/>
-  <circle cx="250" cy="250" r="7" fill="#111"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600">
+
+<circle cx="300" cy="300" r="295" fill="#050505"/>
+
+<circle cx="300" cy="300" r="260" fill="none" stroke="#161616" stroke-width="2"/>
+<circle cx="300" cy="300" r="245" fill="none" stroke="#1c1c1c" stroke-width="2"/>
+<circle cx="300" cy="300" r="230" fill="none" stroke="#202020" stroke-width="2"/>
+<circle cx="300" cy="300" r="215" fill="none" stroke="#262626" stroke-width="2"/>
+<circle cx="300" cy="300" r="200" fill="none" stroke="#2d2d2d" stroke-width="2"/>
+<circle cx="300" cy="300" r="185" fill="none" stroke="#232323" stroke-width="2"/>
+<circle cx="300" cy="300" r="170" fill="none" stroke="#202020" stroke-width="2"/>
+<circle cx="300" cy="300" r="155" fill="none" stroke="#191919" stroke-width="2"/>
+
+<circle cx="300" cy="300" r="52" fill="#1a1a1a"/>
+
+<circle cx="300" cy="300" r="6" fill="#d8d8d8"/>
+
 </svg>

@@ -1,11 +1,21 @@
 import vinyl from "../assets/vinyl.svg";
 
-function Vinyl() {
+interface VinylProps {
+  albumArt: string;
+  isPlaying: boolean;
+}
+
+export default function Vinyl({
+  albumArt,
+  isPlaying,
+}: VinylProps) {
   return (
-    <div className="vinyl">
-      <img src={vinyl} alt="Vinyl Record" />
+    <div className={`vinyl ${isPlaying ? "playing" : "paused"}`}>
+      <img className="record" src={vinyl} alt="Vinyl Record" />
+
+      <div className="album-center">
+        <img src={albumArt} alt="Album Art" />
+      </div>
     </div>
   );
 }
-
-export default Vinyl;
